@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071426">
+<title>Physio Routine | Download Android App</title>
+<meta name="description" content="Discover Physio Routine, a physiotherapy patient management app. Download the Android APK or open the web version.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="Physio Routine - Patient Management">
+<meta property="og:description" content="Organize your physiotherapy workflow. Download the app or open it on the web.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://balaji759.github.io/Physio-routine-/">
+<link rel="canonical" href="https://balaji759.github.io/Physio-routine-/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg:#071426;
+  --panel:#0e2036;
+  --text:#f4f8ff;
+  --muted:#9db0c8;
+  --green:#55e6c1;
+  --border:rgba(255,255,255,.11);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{
+  font-family:Inter,Arial,sans-serif;color:var(--text);
+  background:radial-gradient(ellipse at 50% 0%,#153756 0%,var(--bg) 55%);
+  line-height:1.6;min-height:100vh
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(1080px,92%);margin:auto}
+header{padding:17px 0;border-bottom:1px solid var(--border);background:#071426dd}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.logo{
+  width:43px;height:43px;display:grid;place-items:center;
+  border-radius:14px;background:#123b50;color:var(--green);
+  border:1px solid #55e6c155;font-size:24px
+}
+.navlinks{display:flex;align-items:center;gap:20px}
+.navlinks>a:not(.btn){font-size:12px;color:var(--muted)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:49px;padding:0 18px;border:1px solid transparent;
+  border-radius:13px;font-size:12px;font-weight:800;text-align:center;
+  transition:.2s;cursor:pointer
+}
+.btn:hover{transform:translateY(-2px);opacity:.92}
+.primary{background:linear-gradient(135deg,#70f2cf,#44d7b1);color:#06251f}
+.secondary{background:#ffffff08;border-color:var(--border);color:var(--text)}
+.hero{
+  padding:70px 0 48px;display:grid;grid-template-columns:1.1fr .9fr;
+  gap:38px;align-items:center
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;padding:7px 12px;
+  border:1px solid #55e6c13b;background:#55e6c10c;color:var(--green);
+  border-radius:99px;font-size:10px;font-weight:800;letter-spacing:.5px;
+  margin-bottom:20px
+}
+.dot{height:7px;width:7px;background:var(--green);border-radius:50%}
+h1{font-size:clamp(38px,5.5vw,62px);line-height:1.08;letter-spacing:-2.3px;margin-bottom:20px}
+h1 span{color:var(--green)}
+.desc{font-size:14px;color:var(--muted);max-width:520px;margin-bottom:25px}
+.buttons{display:flex;gap:10px;flex-wrap:wrap}
+.small{font-size:10px;color:var(--muted);margin-top:14px}
+.visual{position:relative;min-height:350px;display:grid;place-items:center}
+.glow{position:absolute;width:240px;height:240px;border-radius:50%;background:#55e6c126;filter:blur(55px)}
+.phone{
+  position:relative;width:245px;padding:12px;border-radius:29px;
+  background:linear-gradient(145deg,#294b69,#091728);
+  border:1px solid #ffffff2b;box-shadow:0 28px 70px #0007;transform:rotate(2deg)
+}
+.screen{min-height:335px;border-radius:20px;background:#f3f7fb;color:#10243b;padding:18px 14px}
+.mocktop{display:flex;align-items:center;gap:10px;margin-bottom:22px}
+.mocklogo{background:#103b55;color:#6af0cd;width:36px;height:36px;border-radius:11px;display:grid;place-items:center;font-size:20px}
+.mocktitle{font-size:12px;font-weight:800}
+.mocksub,.mockdesc{color:#718096;font-size:9px}
+.mocklabel{font-size:9px;color:#61738a;font-weight:700;margin-bottom:8px}
+.mockcard{padding:13px;background:white;border:1px solid #e0e9f2;border-radius:12px;margin-bottom:10px}
+.mocknumber{font-size:22px;font-weight:800}
+.mockgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mockmini{padding:12px 8px;background:white;border:1px solid #e0e9f2;border-radius:11px}
+.mockmini strong{display:block;font-size:17px}
+.mockmini span{font-size:9px;color:#718096}
+section{padding:43px 0}
+.heading{text-align:center;max-width:620px;margin:0 auto 27px}
+.heading h2,.download h2{font-size:clamp(25px,4vw,35px);letter-spacing:-.8px;margin-bottom:8px}
+.heading p,.download>p{color:var(--muted);font-size:13px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.feature{padding:22px;background:linear-gradient(145deg,#112740,#0a1c2f);border:1px solid var(--border);border-radius:17px;transition:.2s}
+.feature:hover{transform:translateY(-3px);border-color:#55e6c144}
+.ficon{width:43px;height:43px;display:grid;place-items:center;border-radius:12px;background:#55e6c115;color:var(--green);font-size:21px;margin-bottom:14px}
+.feature h3{font-size:14px;margin-bottom:7px}
+.feature p{font-size:12px;color:var(--muted)}
+.download{
+  text-align:center;padding:36px 23px;border:1px solid #55e6c133;
+  border-radius:23px;background:radial-gradient(ellipse at top,#55e6c111,transparent 70%),var(--panel)
+}
+.download>p{max-width:570px;margin:0 auto 21px}
+.downloadbuttons{display:flex;justify-content:center;gap:11px;flex-wrap:wrap}
+.notice{
+  text-align:left;margin-top:20px;padding:14px;border:1px solid var(--border);
+  border-radius:12px;background:#ffffff04;color:var(--muted);font-size:11px
+}
+.notice strong{color:var(--text)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.step{padding:19px;border:1px solid var(--border);border-radius:15px;background:#ffffff04}
+.stepnum{font-size:10px;font-weight:800;color:var(--green);margin-bottom:8px}
+.step h3{font-size:13px;margin-bottom:6px}
+.step p{font-size:11px;color:var(--muted)}
+.webpanel{
+  display:flex;align-items:center;justify-content:space-between;gap:18px;
+  padding:22px;border:1px solid var(--border);background:var(--panel);border-radius:17px
+}
+.webpanel h3{font-size:16px;margin-bottom:4px}
+.webpanel p{font-size:12px;color:var(--muted)}
+footer{margin-top:25px;padding:24px 0;border-top:1px solid var(--border);font-size:11px;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:800px){
+  .hero{grid-template-columns:1fr;padding-top:45px;gap:15px}
+  .features{grid-template-columns:repeat(2,1fr)}
+  .navlinks{gap:10px}
+  .navlinks>a:not(.navcta){display:none}
+}
+@media(max-width:520px){
+  h1{letter-spacing:-1.6px}
+  .features,.steps{grid-template-columns:1fr}
+  .buttons .btn{flex:1 1 140px;padding:0 10px;font-size:11px}
+  .downloadbuttons .btn{width:100%}
+  .webpanel{align-items:flex-start;flex-direction:column}
+  section{padding:32px 0}
+  .download{padding:28px 16px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important}
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#" aria-label="Physio Routine home">
+      <span class="logo">✚</span><span>Physio Routine</span>
+    </a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#install">Installation</a>
+      <a class="btn secondary navcta" style="min-height:38px;padding:0 12px" href="https://balaji759.github.io/Physio-routine-/" target="_blank" rel="noopener noreferrer">Open Web ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="container">
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> YOUR PHYSIOTHERAPY WORKFLOW</div>
+      <h1>Your clinic routine.<br><span>Made simpler.</span></h1>
+      <p class="desc">
+        Meet Physio Routine — an app designed to help organize physiotherapy
+        patient records, attendance, fees and history in one convenient workspace.
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/balaji759/Physio-routine-/raw/refs/heads/main/physio%20routine.apk">
+          ↓ Download APK
+        </a>
+        <a class="btn secondary" href="https://balaji759.github.io/Physio-routine-/" target="_blank" rel="noopener noreferrer">
+          ↗ Open in Web
+        </a>
+        <a class="btn secondary" href="#features">Explore Features</a>
+      </div>
+      <p class="small">Android APK · Web version available · Android device required for APK installation</p>
+    </div>
+
+    <div class="visual" aria-label="Illustrative Physio Routine app preview">
+      <div class="glow"></div>
+      <div class="phone">
+        <div class="screen">
+          <div class="mocktop">
+            <div class="mocklogo">✚</div>
+            <div><div class="mocktitle">Physio Routine</div><div class="mocksub">Patient management</div></div>
+          </div>
+          <div class="mocklabel">YOUR WORKSPACE</div>
+          <div class="mockcard">
+            <div class="mockdesc">Patient records</div>
+            <div class="mocknumber">Organized</div>
+            <div class="mockdesc">Keep important details together</div>
+          </div>
+          <div class="mockgrid">
+            <div class="mockmini"><strong>✓</strong><span>Attendance</span></div>
+            <div class="mockmini"><strong>₹</strong><span>Fees tracking</span></div>
+            <div class="mockmini"><strong>↻</strong><span>Patient history</span></div>
+            <div class="mockmini"><strong>▤</strong><span>Daily routine</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="heading">
+      <h2>Everything in one routine</h2>
+      <p>Tools designed to help make everyday physiotherapy administration more organized.</p>
+    </div>
+    <div class="features">
+      <article class="feature">
+        <div class="ficon">♙</div>
+        <h3>Patient Records</h3>
+        <p>Keep patient information organized and easier to access.</p>
+      </article>
+      <article class="feature">
+        <div class="ficon">✓</div>
+        <h3>Attendance Tracking</h3>
+        <p>Manage and review patient attendance records.</p>
+      </article>
+      <article class="feature">
+        <div class="ficon">₹</div>
+        <h3>Fees Management</h3>
+        <p>Keep track of fees and payment-related records.</p>
+      </article>
+      <article class="feature">
+        <div class="ficon">◷</div>
+        <h3>Activity History</h3>
+        <p>Review previous entries and patient-related activity.</p>
+      </article>
+      <article class="feature">
+        <div class="ficon">▦</div>
+        <h3>Simple Workflow</h3>
+        <p>Bring routine management tasks together in one app.</p>
+      </article>
+      <article class="feature">
+        <div class="ficon">↗</div>
+        <h3>Web Access</h3>
+        <p>Open the web version directly in your browser without installing the APK.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="download">
+    <div class="download">
+      <div class="eyebrow">✦ PHYSIO ROUTINE</div>
+      <h2>Choose how you want to use it</h2>
+      <p>Download the Android APK or launch the web version directly in your browser.</p>
+      <div class="downloadbuttons">
+        <a class="btn primary" href="https://github.com/balaji759/Physio-routine-/raw/refs/heads/main/physio%20routine.apk">
+          ↓ Download APK
+        </a>
+        <a class="btn secondary" href="https://balaji759.github.io/Physio-routine-/" target="_blank" rel="noopener noreferrer">
+          ↗ Open in Web
+        </a>
+        <a class="btn secondary" href="#features">Explore Features ↓</a>
+      </div>
+      <div class="notice">
+        <strong>Security note:</strong> The APK is hosted on GitHub. Download only if you trust the source.
+        Keep Google Play Protect enabled and review any security warnings before installing.
+        Never disable device protection just to install an app.
+      </div>
+    </div>
+  </section>
+
+  <section id="install">
+    <div class="heading">
+      <h2>How to install the APK</h2>
+      <p>Follow these steps on your Android device.</p>
+    </div>
+    <div class="steps">
+      <article class="step">
+        <div class="stepnum">STEP 01</div>
+        <h3>Download the APK</h3>
+        <p>Tap Download APK and wait for the file to finish downloading.</p>
+      </article>
+      <article class="step">
+        <div class="stepnum">STEP 02</div>
+        <h3>Open and scan</h3>
+        <p>Open the downloaded file. If Google Play Protect offers to scan it, choose Scan and review the result.</p>
+      </article>
+      <article class="step">
+        <div class="stepnum">STEP 03</div>
+        <h3>Install if trusted</h3>
+        <p>If Android asks permission to install from your browser or file manager, allow that source only if you trust the APK, then follow the prompts.</p>
+      </article>
+    </div>
+    <div class="notice">
+      <strong>Important:</strong> If Play Protect blocks the app or identifies it as harmful, do not bypass the warning.
+      Verify the APK and resolve the issue before distributing it.
+    </div>
+  </section>
+
+  <section>
+    <div class="webpanel">
+      <div>
+        <h3>Don't want to install anything?</h3>
+        <p>Try the Physio Routine web version in your browser.</p>
+      </div>
+      <a class="btn primary" href="https://balaji759.github.io/Physio-routine-/" target="_blank" rel="noopener noreferrer">
+        Open Web App ↗
+      </a>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="container foot">
+    <span>© <span id="year"></span> Physio Routine</span>
+    <span>Built to help organize physiotherapy workflows.</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
