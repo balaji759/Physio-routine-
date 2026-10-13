@@ -2196,6 +2196,15 @@ App.init().catch(err=>{
   const v = document.getElementById('view');
   if(v) v.innerHTML = `<div class="glass" style="text-align:center"><div class="empty-icon" style="margin:0 auto 12px"><svg class="icon icon-lg"><use href="#i-alert"/></svg></div><p style="color:#fb7185;font-weight:800">Failed to initialize</p><p class="tiny mt">Please refresh the page.</p></div>`;
 });
+</script>  
+<script>
+(function () {
+  // Helps prevent accidental browser overscroll refresh
+  // where the browser supports this CSS behavior.
+  document.documentElement.style.overscrollBehaviorY = "none";
+  document.body.style.overscrollBehaviorY = "none";
+})();
 </script>
+</body>
 </body>
 </html>
